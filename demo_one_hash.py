@@ -14,7 +14,7 @@ M_QUERIED = 10_000
 
 
 def main() -> None:
-    bf = BloomFilter(M_BITS)
+    bf = BloomFilter(M_BITS, k=1)
 
     for i in range(N_INSERTED):
         bf.add(f"member-{i}")
